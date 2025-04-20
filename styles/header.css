@@ -1,0 +1,85 @@
+body {
+    margin : 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    background-color: #181818;
+}
+
+.header__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.header__nav {
+    margin-left: 120px;
+    margin-right: 180px;
+}
+
+.header__nav a {
+    margin-right: 31px;
+    color: white;
+    text-decoration: none;
+    font-family: RobotoMedium, sans-serif;
+}
+
+.header__nav a:hover {
+    color: grey;
+}
+
+.header__nav a:last-child {
+    margin-right: 0;
+}
+
+.header__texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    padding: 50px 0 50px 0;
+    color:white;
+}
+
+
+
+.header__texts-title {
+    font-size: 80px;
+    font-family: RobotoMedium,sans-serif;
+    margin: 0;
+    width: 62%;
+    text-align: center;
+}
+
+.header__texts-subtitle {
+    font-size: 20px;
+    font-family: RobotoLight,sans-serif;
+    margin: 17px 0 0 0;
+    width: 50%;
+    text-align: center;
+}
+
+.header__buttons {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__first-button {
+    margin-right: 35px;
+}
+
+.header__image {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__image img {
+
+}
