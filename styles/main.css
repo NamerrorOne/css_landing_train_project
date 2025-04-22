@@ -1,0 +1,143 @@
+.main__features, .main__content, .main__gallery, .main__partners{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__title,
+.main__subtitle {
+    font-family: RobotoLight, sans-serif;
+    margin-bottom: 0;
+    text-align: center;
+    width: 40%;
+}
+
+.main__title {
+    margin-top: 162px;
+    font-size: 52px;
+}
+
+.main__subtitle {
+    margin-top: 27px;
+    font-size: 20px;
+}
+
+.main__image {
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main__image ul {
+    margin: 0;
+    padding: 0;
+}
+.main__image ul li {
+    list-style-type: none;
+    margin-bottom: 35px;
+    width: 200px;
+}
+
+.main__image ul li:last-child {
+    margin-bottom: 0;
+}
+
+.main_li_header {
+    display: flex;
+    font-size: 20px;
+    font-family: RobotoMedium, sans-serif;
+    align-items: center;
+    height: 80px;
+}
+
+.main_li_header img {
+    margin-right: 12px;
+}
+
+.main_li_header span {
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.main_li_footer{
+    margin-top: 20px;
+    width: 270px;
+    font-family: RobotoLight;
+    font-size: 16px;
+}
+
+.main__cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 44px;
+}
+
+.main__card {
+    background-color: white;
+    width: 476px;
+    height: 588px;
+    border-radius: 10px;
+    padding: 40px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__cards h1 {
+    color: #000000;
+    margin: 0;
+    font-size: 20px;
+    font-family: RobotoMedium, sans-serif;
+    text-align: center;
+}
+
+.main__cards h5 {
+    color: #5C5C5C;
+    margin: 0;
+    font-family: RobotoLight, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    width: 270px;
+    margin-top: 26px;
+}
+
+.first__card {
+    margin-right: 33px;
+}
+
+/* GALLERY */
+.gallery__section img {
+    border-radius: 12px;
+    margin-right: 28px;
+}
+
+.gallery__section img:last-child {
+    margin-right: 0;
+}
+
+.gallery_first_row, .gallery_second_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 44px;
+}
+.gallery_second_row {
+    margin-bottom: 44px;
+}
+
+/* PARTNERS */
+.partners__images {
+    margin-top: 50px;
+}
+
+.partners__images img {
+    height: 60px;
+    margin-right: 70px;
+    margin-bottom: 54px;
+}
+
+.partners__images img:last-child {
+    margin-right: 0;
+
+}
