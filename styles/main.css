@@ -327,6 +327,10 @@
     .main__image ul li {
         margin-top: 20px;
     }
+
+    .main__subtitle {
+        width: 400px;
+    }
 }
 
 @media (max-width:700px) {
@@ -344,6 +348,9 @@
 }
 
 @media (max-width:540px) {
+    .main__subtitle {
+        width: 90%;
+    }
 
     .main__cards {
         align-items: center;
