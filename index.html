@@ -3,6 +3,8 @@
 <head>
     <title>Alsora</title>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scales=1, width=device-width "/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="styles/fonts.css"/>
     <link rel="stylesheet" type="text/css" href="styles/header.css"/>
     <link rel="stylesheet" type="text/css" href="styles/buttons.css"/>
@@ -12,7 +14,9 @@
 <body>
     <header>
         <section class="header__main">
-            <img src="./images/logo.png" alt=""/>
+            <div class="header__logo_container">
+                <img src="./images/logo.png" alt=""/>
+            </div>
             <nav class="header__nav">
                 <a href="#">Home</a>
                 <a href="#">Product</a>
@@ -26,7 +30,7 @@
             <h5 class="header__texts-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, est maxime. Voluptatem sint consequatur eligendi quis illum nisi? Eaque aperiam excepturi, optio similique reiciendis maiores! Ex ab cum temporibus adipisci.</h5>
         </section>
         <section class="header__buttons">
-            <button class="primary header__first-button">Call us!</button>
+            <button class="primary header__first-button">Try fo free</button>
             <button class="secondary">Learn more</button>
         </section>
         <section class="header__image">
@@ -106,20 +110,29 @@
             </div>
             <button class="secondary">see more</button>
         </section>
+        
         <section class="main__partners">
             <h1 class="main__title">Gallery</h1>
             <h5 class="main__subtitle">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum esse laboriosam earum fugiat ex commodi, accusamus modi fuga aspernatur amet.
             </h5>
-               <div class="partners__images">
+            <div class="partners__images">
+                <div class="partners__images__container">
                     <img src="./images/logos/logos_android-icon.svg" alt="">
-                  
                     <img src="./images/logos/logos_apple-app-store.svg" alt="">
-                    <img src="./images//logos/babylon-js-seeklogo.svg" alt="">
+                    <img src="./images/logos/babylon-js-seeklogo.svg" alt="">
+                    <img src="./images/logos/react-logo.svg" alt="">
+                    <img style="background-color: white;border-radius: 10px;" src="./images/logos/nextjs-icon-svgrepo-com.svg" alt="">
+                    <img src="./images/logos/flutter-svgrepo-com.svg" alt="">
+                    <!-- Дублируем изображения -->
+                    <img src="./images/logos/logos_android-icon.svg" alt="">
+                    <img src="./images/logos/logos_apple-app-store.svg" alt="">
+                    <img src="./images/logos/babylon-js-seeklogo.svg" alt="">
                     <img src="./images/logos/react-logo.svg" alt="">
                     <img style="background-color: white;border-radius: 10px;" src="./images/logos/nextjs-icon-svgrepo-com.svg" alt="">
                     <img src="./images/logos/flutter-svgrepo-com.svg" alt="">
                 </div>
+            </div>
             <button class="secondary">see more</button>
         </section>
         <section class="main__testimonials">

@@ -1,8 +1,10 @@
+
+
 body {
-    margin : 0;
-    height: 100vh;
+
     width: 100vw;
     background-color: #181818;
+
 }
 
 .header__main {
@@ -12,9 +14,30 @@ body {
     height: 120px;
 }
 
+.header__main div {
+    width: 200px;
+}
+
+.header__main div img {
+    animation-name: logo_moving;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes logo_moving {
+    0% {
+        transform: translate(-20px);
+    }
+    100% {
+       transform: translate(20px);
+    }
+}
+
 .header__nav {
-    margin-left: 120px;
-    margin-right: 180px;
+    margin-left: 7%;
+    margin-right: 11%;
 }
 
 .header__nav a {
@@ -41,13 +64,11 @@ body {
     color:white;
 }
 
-
-
 .header__texts-title {
     font-size: 80px;
     font-family: RobotoMedium,sans-serif;
     margin: 0;
-    width: 62%;
+    width: 680px;
     text-align: center;
 }
 
@@ -55,7 +76,7 @@ body {
     font-size: 20px;
     font-family: RobotoLight,sans-serif;
     margin: 17px 0 0 0;
-    width: 50%;
+    width: 680px;
     text-align: center;
 }
 
@@ -78,5 +99,60 @@ body {
 }
 
 .header__image img {
-    width: 99%;
+    width: 100%;
+}
+
+@media (max-width:800px) {
+
+    .header__texts {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    .header__texts-title,
+    .header__texts-subtitle {
+        width: 100%;
+        
+    }
+
+    .header__texts-title {
+        font-size: 50px;
+    }
+
+    .header__texts-subtitle {
+        font-size: 17px;
+    }
+
+    .header__main {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .header__nav {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width:450px) {
+    .header__main {
+        height: auto;
+    }
+    .header__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header__nav a {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    .header__buttons {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+    .header__buttons > button:first-child {
+        margin-right: 0;
+    }
 }
